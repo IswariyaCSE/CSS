@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>GRIDS</title>
+        <style>
+            .d1{background:coral;}
+            .d2{background:lightblue;}
+            .d3{background: turquoise;}
+            .d4{background:lightpink;}
+            .d5{background:palegreen;}
+            .d6{background:burlywood;}
+
+            .container{
+                font-size:50px;
+                width:100%;
+                background:black;
+                grid-template-columns:100px 100px 100px;
+                grid-template-rows: 100px 100px 100px;
+                grid-column-gap:5px;
+                grid-row-gap:7px;
+                display:grid;
+            }
+            .container2{
+                font-size:50px;
+                width:100%;
+                background:black;
+                grid-template-columns:auto 15% 50px 1fr 2fr 100px;
+                grid-template-rows: 1fr 2fr;
+                grid-gap:10px 10px;
+                display:grid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+        </div>
+        <br/>
+        <div class="container2">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+            <div class="d6">6</div>
+        </div>
+    </body>
+</html>
